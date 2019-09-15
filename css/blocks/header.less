@@ -1,0 +1,96 @@
+// main: ../style.less
+
+
+header{
+    padding: 1.2rem 0;
+}
+.header__inner{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;;
+}
+.header__logo{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.header__logo-content{
+    padding-left: 0.7rem;
+}
+.header__logo-img{
+    width: 57px;
+    height: 57px;
+    
+    img{
+        border-radius: 50%;
+        width: 57px;
+        height: 57px;
+    }
+}
+.header__logo-name{
+    font-weight: 700;
+    font-size: 1.07rem;
+}
+.header__logo-prof{
+    color:@gray;
+    font-size: .8rem;
+}
+
+nav{
+    max-width: 530px;
+    width:100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    
+    ul{
+        width: 100%;
+        list-style: none;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+}
+.header__nav-link{
+    
+    a{
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.93rem;
+        color:@black;
+        transition: all .2s linear
+        
+         
+    }
+    &:not(:last-child) a:hover{
+        border-bottom: 0.22rem solid @black;
+        padding-bottom: 0.08rem;
+        width:100%;
+    }
+   &-btn{
+    padding: 0.7rem 2rem;
+    border: 0.22rem solid @black;
+    border-radius: 5rem;
+    
+    &:hover{
+        color:@white;
+        background-color: @black;
+        transition: all .2s linear
+    }
+}
+
+}
+
+    

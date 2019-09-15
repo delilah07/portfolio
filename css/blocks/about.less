@@ -1,0 +1,52 @@
+// main: ../style.less
+#about{
+    margin: 8rem 0;
+    
+}
+.about__inner{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.about__photo{
+    width:45%;
+    
+    img{
+        width:100%;
+    }
+}
+.about__content{
+    width:55%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    &-title{
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+    &-bigtitle{
+        font-size: 6.1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: @gray-light;
+        margin-bottom: 3.3rem;
+    }
+    &-text{
+        font-size: 0.8rem;
+        font-weight: 300;
+        margin: 0;
+        line-height: 2;
+    }
+    &-btn{
+        margin-top: 3.67rem;
+    }
+}

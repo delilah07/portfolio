@@ -1,0 +1,101 @@
+// main: ../style.less
+#intro{
+    height: calc(100vh - 15rem);
+}
+.intro__inner{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    border-bottom: 1px solid @gray-light;
+    align-items: center;
+}
+.intro__content{
+    width: 50%;
+   
+    &-subtitle{
+        font-size: 2.13rem;
+        font-weight: 300;
+    }
+    &-title{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    &-text{
+        font-size: 1.2rem;
+        color:@gray;
+    }
+}
+.intro__social{
+    list-style-type:none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding: 0;
+    margin-top: 2rem;
+    margin-bottom: 2.7rem;
+    &-link{
+        width: 2.7rem;
+        height: 2.7rem;
+        transition: transform .2s linear;
+        &:not(:last-child){
+            margin-right: 0.8rem;
+        }
+        &:hover{
+            transform: translateY(-0.5rem);
+        }
+        a{
+            width: 2.7rem;
+            height: 2.7rem;
+            color:@white;
+            font-size: 1.6rem;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        &.behance{
+            background-color: #1869ff;
+        }
+        &.dribbble{
+            background-color: #e51a68;
+        }
+        &.linkedin{
+            background-color: #007bb6;
+        }
+        &.facebook{
+            background-color: #3a5898;
+        }
+        &.instagram{
+            background-color: #13578a;
+        }
+        &.twitter{
+            background-color: #56acef;
+        }
+    }
+}
+.intro__photo{
+    width: 50%;
+    height: calc(100vh - 15rem);
+    padding: 0;
+    background: url("../images/intro/symbols.png") center top no-repeat;
+    background-size: contain;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    
+    img{
+        width: auto;
+        height: 100%;
+    }
+}
