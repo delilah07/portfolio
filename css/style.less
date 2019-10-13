@@ -7,7 +7,8 @@
 
 
 html{
-    font-size: 15px; 
+    font-size: 15px;
+    
 }
 
 body{
@@ -15,6 +16,10 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     color: @black;
+    
+    &.no-scroll{
+        overflow: hidden;
+    }
 }
 h1, h2, h3, h4, h5, h6{
     margin: 0;
@@ -30,6 +35,9 @@ a{
     text-decoration: none;
 }
 
+//Slick Slider
+@import "slick-slider/slick";
+@import "slick-slider/slick-theme";
 
 // Blocks
 @import "blocks/container";
@@ -39,6 +47,12 @@ a{
 @import "blocks/about";
 @import "blocks/review";
 @import "blocks/blog";
+@import "blocks/footer";
+@import "blocks/modals";
 
-
-
+.hide{
+    display: none;
+}
+.show{
+    display: flex;
+}
