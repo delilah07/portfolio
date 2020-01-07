@@ -12,8 +12,20 @@
         letter-spacing:0.1rem;
         transition: all .2s linear;
         
+        @media @mobile{
+            display: block;
+            margin: 0 auto;
+            padding: 0.9rem 1.5rem;
+        }
+        
         &:not(:last-child){
             margin-right: 1rem;
+            margin-bottom: .5rem;
+            
+            @media @mobile{
+                margin: 0 auto 0.5rem;
+                
+            }
         }
         &:hover{
             color:@white;

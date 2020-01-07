@@ -1,6 +1,6 @@
 // main: ../style.less
 #intro{
-    height: calc(100vh - 14rem);
+   max-height: calc(100vh - 6rem);
 }
 .intro__inner{
     display: -webkit-flex;
@@ -10,17 +10,36 @@
     display: flex;
     border-bottom: 1px solid @gray-light;
     align-items: center;
+    
+    @media @tablet{
+        margin-top: 6rem;
+    }
 }
 .intro__content{
     width: 50%;
+    z-index: 10;
+    
+    @media @mobile{
+        width: 100%;
+        text-align: center;
+        margin: 1.5rem auto 2rem;
+    }
    
     &-subtitle{
         font-size: 2.13rem;
         font-weight: 300;
+        
+        @media @tablet{
+            font-size: 1.5rem;
+        }
     }
     &-title{
         font-size: 3rem;
         font-weight: 700;
+        
+        @media @tablet{
+            font-size: 2rem;
+        }
     }
     &-text{
         font-size: 1.2rem;
@@ -37,6 +56,13 @@
     padding: 0;
     margin-top: 2rem;
     margin-bottom: 2.7rem;
+    
+    @media @mobile{
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
     &-link{
         width: 2.7rem;
         height: 2.7rem;
@@ -83,7 +109,7 @@
 }
 .intro__photo{
     width: 50%;
-    height: calc(100vh - 15rem);
+    max-height: calc(100vh - 6rem);
     padding: 0;
     background: url("../images/intro/symbols.png") center top no-repeat;
     background-size: contain;
@@ -94,8 +120,12 @@
     display: flex;
     justify-content: center;
     
+    @media @mobile{
+        display: none;
+    }
+    
     img{
-        width: auto;
-        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }
